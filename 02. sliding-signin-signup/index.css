@@ -1,0 +1,226 @@
+/* RESET */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+  /* background-color: #000; */
+}
+
+.main-container {
+  width: 100%;
+  height: 100vh;
+  z-index: -2;
+  background-color: #000;
+}
+
+/* ASSET SETTING */
+
+.input {
+  border-radius: 40px;
+  width: 400px;
+  height: 60px;
+  background: rgba(128, 128, 128, 0.543);
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.input i {
+  margin-right: 15px;
+  font-size: 1.4rem;
+}
+
+input {
+  width: 350px;
+  font-size: 1.2rem;
+  border: none;
+  background: transparent;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  color: white;
+  padding: 15px 40px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  background: rgb(88, 88, 241);
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+  transition: all 250ms linear;
+}
+
+/* INPUT MAIN */
+
+.input-main {
+  width: 100%;
+  height: 100vh;
+  /* display: flex;
+  align-items: center;
+  justify-content: space-evenly; */
+  position: relative;
+  /* transition: all 2s ease-in-out; */
+}
+
+.input-main h3 {
+  font-size: 2rem;
+}
+
+.input-sign-in,
+.input-sign-up {
+  /* background-color: #000; */
+  display: grid;
+  text-align: center;
+  justify-items: center;
+  grid-gap: 20px;
+  position: absolute;
+  top: 20%;
+  right: 10%;
+}
+
+.input-sign-up {
+  transition: all 1s ease-in-out;
+  z-index: 1;
+}
+
+.input-sign-in {
+  transition: all 2s ease-in-out;
+  z-index: -1;
+}
+
+.input-sign-up-hide {
+  right: 15%;
+}
+
+.input-sign-in-show {
+  z-index: 1;
+  right: 60%;
+}
+
+.social-media-container {
+  display: flex;
+  align-items: center;
+}
+
+.social-media-container > div i {
+  font-size: 2rem;
+}
+
+.social-media-container > div {
+  width: 80px;
+  height: 80px;
+  border: 2px solid grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.social-media-container > div:hover {
+  opacity: 0.6;
+}
+
+/* SIGN UP */
+.sign-up,
+.sign-in {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  grid-gap: 20px;
+  width: 700px;
+  padding: 90px;
+  z-index: 9;
+}
+
+.sign-up button,
+.sign-in button {
+  /* align-self: center; */
+  justify-self: center;
+  background: transparent;
+  border: 2px solid white;
+}
+
+.sign-in img {
+  width: 600px;
+}
+
+.sign-in {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transition: all 2s ease-in-out;
+}
+
+.signin-hide {
+  left: -50%;
+}
+
+.sign-up {
+  position: absolute;
+  right: -100%;
+  top: 0%;
+  transition: all 2s ease-in-out;
+}
+
+.signup-show {
+  right: 0%;
+}
+
+.circle {
+  width: 2000px;
+  height: 2000px;
+  background: linear-gradient(45deg, rgb(88, 88, 241), rgb(128, 0, 255));
+  border-radius: 50%;
+  position: absolute;
+  top: -100%;
+  left: -80%;
+  z-index: 2;
+  transition: all 2s ease-in-out;
+  /* display: none; */
+}
+
+.circle-to-right {
+  left: 50%;
+}
+
+/* @keyframes circle-to-right {
+  from {
+    left: -1200px;
+  }
+  to {
+    left: 800px;
+  }
+} */
+
+.circle-to-left {
+  animation: circle-to-left 4s;
+  left: -1200px;
+}
+
+@keyframes circle-to-left {
+  from {
+    left: 800px;
+  }
+  to {
+    left: -1200px;
+  }
+}
+
+/* TODO: FIX THE RESPONSIVE PART */
