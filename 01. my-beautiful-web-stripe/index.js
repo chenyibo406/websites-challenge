@@ -6,3 +6,8 @@ menuIcon.addEventListener("click", () => {
   navbar.classList.toggle("open");
   console.log("hello");
 });
+
+window.onscroll = () => {
+  menuIcon.classList.remove("bx-x");
+  navbar.classList.remove("open");
+};

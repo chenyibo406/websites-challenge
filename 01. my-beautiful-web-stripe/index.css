@@ -137,7 +137,7 @@ a:hover {
   font-size: 40px;
   color: white;
   position: fixed;
-  z-index: 99;
+  z-index: 9999;
   top: 60px;
   right: 60px;
   transition: all 0.3s ease-in-out;
@@ -295,22 +295,9 @@ a:hover {
   color: #4500b5;
 }
 
-/* .intro-1-hero p {
-  line-height: 2.4rem;
-} */
-
 .intro-1-box .apple-pay {
   margin-left: 80px;
-  /* align-self: flex-start; */
 }
-
-/* .intro-1-box .right-column img {
-  border-radius: 50px;
-  max-width: 700px;
-  box-shadow: 8px 7px 33px 5px rgba(0, 0, 0, 0.61);
-  -webkit-box-shadow: 8px 7px 33px 5px rgba(0, 0, 0, 0.61);
-  -moz-box-shadow: 8px 7px 33px 5px rgba(0, 0, 0, 0.61);
-} */
 
 /* - INTRO-2-BOX - */
 
@@ -561,26 +548,29 @@ ul li {
     padding-bottom: 100px;
   }
 
+  .intro-container img {
+    width: 100%;
+    align-self: end;
+    margin-top: 100px;
+    /* margin-bottom: 100px; */
+  }
+
   .intro-container h1 {
     font-size: 50px;
   }
 
-  .intro-1-box {
+  .intro-1-box,
+  .intro-3-box {
     flex-direction: column;
-
+    align-items: center;
+  }
+  .intro-2-box .top-col {
+    flex-direction: column;
     align-items: center;
   }
 
   .intro-2-box .top-col .left-col {
     margin-right: 0;
-  }
-
-  .intro-container img {
-    width: 100%;
-
-    margin-top: 100px;
-    margin-bottom: 100px;
-    align-self: end;
   }
 }
 
@@ -592,22 +582,6 @@ ul li {
     background-color: rgb(0, 71, 97);
     clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
   }
-  /* .intro-2-box {
-    margin-top: 200px;
-  } */
-  /* 
-  .intro-2-box {
-    padding: 0px;
-    margin-bottom: 0;
-  } */
-
-  /* .intro-2-box {
-    padding: 50px 0;
-  }
-
-  .intro-3-box {
-    margin-top: 40px;
-  } */
 
   .intro-2-box .bottom-col {
     grid-template-columns: repeat(2, 1fr);
@@ -626,7 +600,7 @@ ul li {
   .nav-container nav {
     display: none;
     position: sticky;
-    /* top: 80px; */
+
     padding-top: 60px;
   }
 
@@ -637,17 +611,14 @@ ul li {
   }
 
   .nav-container nav ul li {
-    /* display: block; */
     font-size: 30px;
-    /* justify-self: flex-start; */
+
     align-self: center;
   }
 
   .nav-container nav.open {
     display: flex;
     flex-direction: column;
-
-    /* flex-direction: row; */
   }
 
   .hero-container img {
@@ -656,9 +627,6 @@ ul li {
 }
 
 @media only screen and (max-width: 978px) {
-  /* .gradient {
-    clip-path: polygon(0 0, 100% 0%, 100% 92%, 0 100%);
-  } */
   .brand-container {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -676,9 +644,7 @@ ul li {
     grid-template-columns: 1fr;
     gap: 40px;
   }
-  /* .apple-pay {
-    margin-left: 0;
-  } */
+
   .hero-container {
     height: 500px;
   }
@@ -732,7 +698,6 @@ ul li {
     grid-template-columns: 1fr;
   }
   .footer .section-container .logo-info {
-    /* align-self: flex-end; */
     justify-self: flex-start;
   }
   .footer .section-container .product {
