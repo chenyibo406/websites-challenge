@@ -419,8 +419,6 @@ a:hover {
   justify-content: space-between;
 
   padding-top: 100px;
-  /* padding-bottom: 100px; */
-  /* gap: 50px; */
 }
 
 .intro-3-box .content {
@@ -430,9 +428,6 @@ a:hover {
   justify-content: center;
   gap: 50px;
   margin-right: 50px;
-  /* height: 600px; */
-
-  /* border: 2px solid red; */
 }
 
 .intro-3-box h2 {
@@ -478,13 +473,9 @@ a:hover {
 }
 
 .footer .section-container {
-  /* display: flex;
-  justify-content: space-between;
-  align-items: start; */
-
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  /* justify-content: start; */
+
   justify-items: center;
 }
 
@@ -501,7 +492,6 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* gap: 20px; */
 }
 
 .logo-info h3 {
@@ -566,9 +556,7 @@ ul li {
   .gradient {
     clip-path: polygon(0 0, 100% 0%, 100% 72%, 0 100%);
   }
-  /* .brand-container svg {
-    max-width: 400px;
-  } */
+
   .intro-container {
     padding-bottom: 100px;
   }
@@ -577,22 +565,19 @@ ul li {
     font-size: 50px;
   }
 
-  .intro-1-box,
-  .intro-3-box {
+  .intro-1-box {
     flex-direction: column;
-    /* justify-content: center; */
+
     align-items: center;
   }
-  /* .intro-1-box {
-    gap: 10px;
-  } */
+
   .intro-2-box .top-col .left-col {
     margin-right: 0;
   }
 
   .intro-container img {
     width: 100%;
-    /* margin: 100px 0; */
+
     margin-top: 100px;
     margin-bottom: 100px;
     align-self: end;
