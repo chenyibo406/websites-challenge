@@ -578,7 +578,6 @@ ul li {
   }
 
   .intro-1-box,
-  .intro-2-box .top-col,
   .intro-3-box {
     flex-direction: column;
     /* justify-content: center; */
@@ -682,6 +681,12 @@ ul li {
   .intro-container {
     padding-bottom: 50px;
   }
+
+  .intro-2-box {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .intro-2-box .bottom-col {
     grid-template-columns: 1fr;
     gap: 40px;
