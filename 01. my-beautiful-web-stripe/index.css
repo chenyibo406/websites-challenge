@@ -539,11 +539,11 @@ ul li {
 }
 
 /* ----------------------------- RESPONSIVE ----------------------------- */
-@media only screen and (max-width: 1380px) {
-  .gradient {
-    clip-path: polygon(0 0, 100% 0%, 100% 72%, 0 100%);
-  }
 
+@media only screen and (max-width: 1065px) {
+  .gradient {
+    clip-path: polygon(0 0, 100% 0%, 100% 82%, 0 100%);
+  }
   .intro-container {
     padding-bottom: 100px;
   }
@@ -558,7 +558,6 @@ ul li {
   .intro-container h1 {
     font-size: 50px;
   }
-
   .intro-1-box,
   .intro-3-box {
     flex-direction: column;
@@ -571,12 +570,6 @@ ul li {
 
   .intro-2-box .top-col .left-col {
     margin-right: 0;
-  }
-}
-
-@media only screen and (max-width: 1065px) {
-  .gradient {
-    clip-path: polygon(0 0, 100% 0%, 100% 82%, 0 100%);
   }
   .intro-2-box {
     background-color: rgb(0, 71, 97);
