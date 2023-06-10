@@ -256,9 +256,9 @@ a:hover {
 
 .intro-container {
   background-color: #ece1ff96;
-  /* padding-top: 150px;
-  padding-bottom: 150px; */
-  padding: 150px 0;
+  /* padding: 150px 0; */
+  padding-top: 150px;
+  padding-bottom: 150px;
   height: auto;
 }
 
@@ -416,7 +416,6 @@ a:hover {
 .intro-3-box .content {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   justify-content: center;
   gap: 50px;
   margin-right: 50px;
@@ -708,6 +707,9 @@ ul li {
     justify-self: flex-start;
   }
   .footer .section-container .res-com {
+    justify-self: flex-start;
+  }
+  .footer .section-container .column-box {
     justify-self: flex-start;
   }
 }
